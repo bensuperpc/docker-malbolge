@@ -9,8 +9,8 @@
 #//////////////////////////////////////////////////////////////
 #//                                                          //
 #//  Script, 2021                                            //
-#//  Created: 27, May, 2021                                  //
-#//  Modified: 27, May, 2021                                 //
+#//  Created: 07, June, 2021                                 //
+#//  Modified: 07, June, 2021                                //
 #//  file: -                                                 //
 #//  -                                                       //
 #//  Source: -                                               //
@@ -20,8 +20,8 @@
 #//////////////////////////////////////////////////////////////
 
 TAG_VERSION=latest
-DOCKER_IMAGE=bensuperpc/<<IMAGE_NAME>>
-COMPILER_EXEC=<<IMAGE_NAME>>
+DOCKER_IMAGE=bensuperpc/malbolge
+COMPILER_EXEC=malbolge
 
 case "$1" in
     -version|-v)
@@ -30,7 +30,7 @@ case "$1" in
         shift
         ;;&
     -h)
-        echo "Usage: ${0##*/} [-version latest $COMPILER_EXEC -o hello hello.c]"
+        echo "Usage: ${0##*/} [-version latest $COMPILER_EXEC hello.mb]"
         exit 1
         ;;
 esac
